@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/AppTheme1"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/FabTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/done_question"
+        app:backgroundTint="#E91E63" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/lvquiz"
+        app:layout_anchor="@+id/FabTest"
+        app:layout_anchorGravity="left|bottom"></include>
+
+
+</android.support.design.widget.CoordinatorLayout>
